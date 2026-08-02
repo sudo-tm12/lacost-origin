@@ -1,0 +1,237 @@
+- generic [ref=f3e3]:
+  - navigation [ref=f3e4]:
+    - generic [ref=f3e6]:
+      - heading "Origin" [level=1] [ref=f3e8]
+      - generic [ref=f3e9]:
+        - link "New Arrivals" [ref=f3e10] [cursor=pointer]:
+          - /url: "#"
+        - link "Womens" [ref=f3e11] [cursor=pointer]:
+          - /url: "#"
+        - link "Mens" [ref=f3e12] [cursor=pointer]:
+          - /url: "#"
+        - link "Collections" [ref=f3e13] [cursor=pointer]:
+          - /url: "#"
+        - link "About" [ref=f3e14] [cursor=pointer]:
+          - /url: "#"
+      - generic [ref=f3e15]:
+        - button [ref=f3e16] [cursor=pointer]
+        - button [ref=f3e20] [cursor=pointer]
+        - button "2" [ref=f3e24] [cursor=pointer]
+  - main [ref=f3e29]:
+    - generic [ref=f3e30]:
+      - img "Origin — South African contemporary fashion" [ref=f3e32]
+      - generic [ref=f3e36]:
+        - paragraph [ref=f3e37]: Autumn / Winter 2026
+        - heading "MADE IN SA MADE TO LAST" [level=2] [ref=f3e38]: MADE IN SAMADE TO LAST
+        - paragraph [ref=f3e39]: Natural fibres, clean silhouettes, honest construction. Contemporary fashion designed in South Africa.
+        - generic [ref=f3e40]:
+          - button [ref=f3e41] [cursor=pointer]
+          - button "Our Story" [ref=f3e47] [cursor=pointer]
+    - generic [ref=f3e53]:
+      - generic [ref=f3e54]: NATURAL FIBRES • HONEST CONSTRUCTION • DESIGNED IN SOUTH AFRICA • FREE SHIPPING ON ORDERS OVER R1,500 • NEW SEASON NOW LIVE •
+      - generic [ref=f3e55]: NATURAL FIBRES • HONEST CONSTRUCTION • DESIGNED IN SOUTH AFRICA • FREE SHIPPING ON ORDERS OVER R1,500 • NEW SEASON NOW LIVE •
+      - generic [ref=f3e56]: NATURAL FIBRES • HONEST CONSTRUCTION • DESIGNED IN SOUTH AFRICA • FREE SHIPPING ON ORDERS OVER R1,500 • NEW SEASON NOW LIVE •
+      - generic [ref=f3e57]: NATURAL FIBRES • HONEST CONSTRUCTION • DESIGNED IN SOUTH AFRICA • FREE SHIPPING ON ORDERS OVER R1,500 • NEW SEASON NOW LIVE •
+    - generic [ref=f3e59]:
+      - generic [ref=f3e60]:
+        - paragraph [ref=f3e61]: Curated Selection
+        - heading "SHOP BY CATEGORY" [level=2] [ref=f3e62]: SHOP BYCATEGORY
+      - generic [ref=f3e63]:
+        - generic [ref=f3e65] [cursor=pointer]:
+          - img "WOMENSWEAR" [ref=f3e66]
+          - generic [ref=f3e68]:
+            - paragraph [ref=f3e69]: Dresses, skirts, structured jackets
+            - heading "WOMENSWEAR" [level=3] [ref=f3e70]
+        - generic [ref=f3e71]:
+          - generic [ref=f3e73] [cursor=pointer]:
+            - img "MENSWEAR" [ref=f3e74]
+            - generic [ref=f3e76]:
+              - paragraph [ref=f3e77]: Overshirts, linen, heavy cotton
+              - heading "MENSWEAR" [level=3] [ref=f3e78]
+          - generic [ref=f3e80] [cursor=pointer]:
+            - img "ACCESSORIES" [ref=f3e81]
+            - generic [ref=f3e83]:
+              - paragraph [ref=f3e84]: The finishing touch
+              - heading "ACCESSORIES" [level=3] [ref=f3e85]
+    - generic [ref=f3e88]:
+      - generic [ref=f3e89]:
+        - generic [ref=f3e90]:
+          - paragraph [ref=f3e91]: New This Week
+          - heading "THE NEW ARRIVALS" [level=2] [ref=f3e92]: THE NEWARRIVALS
+        - button [ref=f3e93] [cursor=pointer]
+      - generic [ref=f3e98]:
+        - generic [ref=f3e99]:
+          - generic [ref=f3e100]:
+            - img "Linen Camp Shirt" [ref=f3e101]
+            - generic [ref=f3e102]:
+              - generic [ref=f3e103]:
+                - button "XS" [ref=f3e104] [cursor=pointer]
+                - button "S" [ref=f3e105] [cursor=pointer]
+                - button "M" [ref=f3e106] [cursor=pointer]
+                - button "L" [ref=f3e107] [cursor=pointer]
+                - button "XL" [ref=f3e108] [cursor=pointer]
+              - button "Add to bag" [ref=f3e109] [cursor=pointer]
+            - generic [ref=f3e110]: New
+          - generic [ref=f3e111]:
+            - paragraph [ref=f3e112]: Mens
+            - heading "Linen Camp Shirt" [level=3] [ref=f3e113]
+            - generic [ref=f3e114]: R899
+        - generic [ref=f3e116]:
+          - generic [ref=f3e117]:
+            - img "Structured Blazer" [ref=f3e118]
+            - generic [ref=f3e119]:
+              - generic [ref=f3e120]:
+                - button "XS" [ref=f3e121] [cursor=pointer]
+                - button "S" [ref=f3e122] [cursor=pointer]
+                - button "M" [ref=f3e123] [cursor=pointer]
+                - button "L" [ref=f3e124] [cursor=pointer]
+                - button "XL" [ref=f3e125] [cursor=pointer]
+              - button "Add to bag" [ref=f3e126] [cursor=pointer]
+          - generic [ref=f3e127]:
+            - paragraph [ref=f3e128]: Womens
+            - heading "Structured Blazer" [level=3] [ref=f3e129]
+            - generic [ref=f3e130]:
+              - generic [ref=f3e131]: R1,399
+              - generic [ref=f3e132]: R1,799
+        - generic [ref=f3e133]:
+          - generic [ref=f3e134]:
+            - img "Heavy Cotton Tee" [ref=f3e135]
+            - generic [ref=f3e136]:
+              - generic [ref=f3e137]:
+                - button "XS" [ref=f3e138] [cursor=pointer]
+                - button "S" [ref=f3e139] [cursor=pointer]
+                - button "M" [ref=f3e140] [cursor=pointer]
+                - button "L" [ref=f3e141] [cursor=pointer]
+                - button "XL" [ref=f3e142] [cursor=pointer]
+              - button "Add to bag" [ref=f3e143] [cursor=pointer]
+          - generic [ref=f3e144]:
+            - paragraph [ref=f3e145]: Mens
+            - heading "Heavy Cotton Tee" [level=3] [ref=f3e146]
+            - generic [ref=f3e147]: R599
+        - generic [ref=f3e149]:
+          - generic [ref=f3e150]:
+            - img "Wide-Leg Trouser" [ref=f3e151]
+            - generic [ref=f3e152]:
+              - generic [ref=f3e153]:
+                - button "XS" [ref=f3e154] [cursor=pointer]
+                - button "S" [ref=f3e155] [cursor=pointer]
+                - button "M" [ref=f3e156] [cursor=pointer]
+                - button "L" [ref=f3e157] [cursor=pointer]
+                - button "XL" [ref=f3e158] [cursor=pointer]
+              - button "Add to bag" [ref=f3e159] [cursor=pointer]
+            - generic [ref=f3e160]: Best Seller
+          - generic [ref=f3e161]:
+            - paragraph [ref=f3e162]: Womens
+            - heading "Wide-Leg Trouser" [level=3] [ref=f3e163]
+            - generic [ref=f3e164]: R1,199
+    - generic [ref=f3e167]:
+      - generic [ref=f3e168]:
+        - paragraph [ref=f3e169]: Where everything starts
+        - heading "FROM THE SOURCE" [level=2] [ref=f3e170]: FROM THESOURCE
+        - paragraph [ref=f3e171]: "Origin is about where things start — the material, the idea, the place. We celebrate South African roots: the natural light, the raw textures, and the people who make the clothes."
+        - paragraph [ref=f3e172]: French seams. Natural fibres. Pre-washed fabrics. Clothes that last beyond the season, made properly and priced fairly.
+        - button [ref=f3e174] [cursor=pointer]
+      - generic [ref=f3e180]:
+        - img "Origin studio — South African craftsmanship" [ref=f3e182]
+        - generic [ref=f3e183]:
+          - paragraph [ref=f3e184]: "24"
+          - paragraph [ref=f3e185]: South AfricanDesign
+    - generic [ref=f3e187]:
+      - paragraph [ref=f3e188]: Stay Connected
+      - heading "FROM THE SOURCE" [level=2] [ref=f3e189]: FROM THESOURCE
+      - paragraph [ref=f3e190]: New collections, editorial stories, and early access. Twice a month at most.
+      - generic [ref=f3e191]:
+        - generic [ref=f3e192]:
+          - textbox "Enter your email" [ref=f3e193]
+          - button "Subscribe" [ref=f3e194] [cursor=pointer]
+        - paragraph [ref=f3e197]: By subscribing, you agree to our Privacy Policy and consent to receive updates.
+  - contentinfo [ref=f3e198]:
+    - generic [ref=f3e199]:
+      - generic [ref=f3e200]:
+        - generic [ref=f3e201]:
+          - heading "Origin" [level=2] [ref=f3e202]
+          - paragraph [ref=f3e203]: South African contemporary fashion. Natural fibres, clean silhouettes, honest construction. Made in SA. Made to last.
+          - generic [ref=f3e204]:
+            - link [ref=f3e205] [cursor=pointer]:
+              - /url: "#"
+            - link [ref=f3e209] [cursor=pointer]:
+              - /url: "#"
+        - generic [ref=f3e212]:
+          - heading "Shop" [level=3] [ref=f3e213]
+          - list [ref=f3e214]:
+            - listitem [ref=f3e215]:
+              - link "New Arrivals" [ref=f3e216] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=f3e217]:
+              - link "Womens" [ref=f3e218] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=f3e219]:
+              - link "Mens" [ref=f3e220] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=f3e221]:
+              - link "Tops" [ref=f3e222] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=f3e223]:
+              - link "Bottoms" [ref=f3e224] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=f3e225]:
+              - link "Accessories" [ref=f3e226] [cursor=pointer]:
+                - /url: "#"
+        - generic [ref=f3e227]:
+          - heading "Help" [level=3] [ref=f3e228]
+          - list [ref=f3e229]:
+            - listitem [ref=f3e230]:
+              - link "Contact Us" [ref=f3e231] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=f3e232]:
+              - link "Shipping Info" [ref=f3e233] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=f3e234]:
+              - link "Returns" [ref=f3e235] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=f3e236]:
+              - link "Size Guide" [ref=f3e237] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=f3e238]:
+              - link "Track Order" [ref=f3e239] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=f3e240]:
+              - link "FAQ" [ref=f3e241] [cursor=pointer]:
+                - /url: "#"
+        - generic [ref=f3e242]:
+          - heading "Company" [level=3] [ref=f3e243]
+          - list [ref=f3e244]:
+            - listitem [ref=f3e245]:
+              - link "About Us" [ref=f3e246] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=f3e247]:
+              - link "Careers" [ref=f3e248] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=f3e249]:
+              - link "Sustainability" [ref=f3e250] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=f3e251]:
+              - link "Press" [ref=f3e252] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=f3e253]:
+              - link "Affiliates" [ref=f3e254] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=f3e255]:
+              - link "Stores" [ref=f3e256] [cursor=pointer]:
+                - /url: "#"
+        - generic [ref=f3e257]:
+          - heading "We Accept" [level=3] [ref=f3e258]
+          - generic [ref=f3e259]:
+            - generic [ref=f3e260]: Visa
+            - generic [ref=f3e261]: MC
+            - generic [ref=f3e262]: Amex
+            - generic [ref=f3e263]: PayPal
+      - generic [ref=f3e264]:
+        - paragraph [ref=f3e265]: © 2026 Origin. All rights reserved.
+        - generic [ref=f3e266]:
+          - link "Privacy Policy" [ref=f3e267] [cursor=pointer]:
+            - /url: "#"
+          - link "Terms of Service" [ref=f3e268] [cursor=pointer]:
+            - /url: "#"
+          - link "Cookies" [ref=f3e269] [cursor=pointer]:
+            - /url: "#"
