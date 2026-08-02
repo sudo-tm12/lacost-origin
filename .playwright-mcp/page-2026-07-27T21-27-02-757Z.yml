@@ -1,0 +1,237 @@
+- generic [ref=e3]:
+  - navigation [ref=e4]:
+    - generic [ref=e6]:
+      - heading "LACOSHUB" [level=1] [ref=e8]
+      - generic [ref=e9]:
+        - link "New Arrivals" [ref=e10] [cursor=pointer]:
+          - /url: "#"
+        - link "Tracksuits" [ref=e11] [cursor=pointer]:
+          - /url: "#"
+        - link "Tops" [ref=e12] [cursor=pointer]:
+          - /url: "#"
+        - link "Accessories" [ref=e13] [cursor=pointer]:
+          - /url: "#"
+        - link "Collections" [ref=e14] [cursor=pointer]:
+          - /url: "#"
+      - generic [ref=e15]:
+        - button [ref=e16] [cursor=pointer]
+        - button [ref=e20] [cursor=pointer]
+        - button "2" [ref=e24] [cursor=pointer]
+  - main [ref=e29]:
+    - generic [ref=e30]:
+      - img "Hero" [ref=e32]
+      - generic [ref=e36]:
+        - paragraph [ref=e37]: Spring / Summer 2025
+        - heading "ELEGANCE IN MOTION" [level=2] [ref=e38]: ELEGANCEIN MOTION
+        - paragraph [ref=e39]: Discover the intersection of heritage craftsmanship and contemporary street culture.
+        - generic [ref=e40]:
+          - button [ref=e41] [cursor=pointer]
+          - button "Watch Film" [ref=e47] [cursor=pointer]
+    - generic [ref=e53]:
+      - generic [ref=e54]: NEW SEASON ARRIVALS • FREE SHIPPING WORLDWIDE • EXCLUSIVE MEMBERS REWARDS • SUSTAINABLE FASHION FORWARD •
+      - generic [ref=e55]: NEW SEASON ARRIVALS • FREE SHIPPING WORLDWIDE • EXCLUSIVE MEMBERS REWARDS • SUSTAINABLE FASHION FORWARD •
+      - generic [ref=e56]: NEW SEASON ARRIVALS • FREE SHIPPING WORLDWIDE • EXCLUSIVE MEMBERS REWARDS • SUSTAINABLE FASHION FORWARD •
+      - generic [ref=e57]: NEW SEASON ARRIVALS • FREE SHIPPING WORLDWIDE • EXCLUSIVE MEMBERS REWARDS • SUSTAINABLE FASHION FORWARD •
+    - generic [ref=e59]:
+      - generic [ref=e60]:
+        - paragraph [ref=e61]: Curated Selection
+        - heading "SHOP BY CATEGORY" [level=2] [ref=e62]: SHOP BYCATEGORY
+      - generic [ref=e63]:
+        - generic [ref=e65] [cursor=pointer]:
+          - img "TRACKSUITS" [ref=e66]
+          - generic [ref=e68]:
+            - paragraph [ref=e69]: Heritage reimagined
+            - heading "TRACKSUITS" [level=3] [ref=e70]
+        - generic [ref=e71]:
+          - generic [ref=e73] [cursor=pointer]:
+            - img "TOPS" [ref=e74]
+            - generic [ref=e76]:
+              - paragraph [ref=e77]: Signature polos
+              - heading "TOPS" [level=3] [ref=e78]
+          - generic [ref=e80] [cursor=pointer]:
+            - img "CAPS & BEANIES" [ref=e81]
+            - generic [ref=e83]:
+              - paragraph [ref=e84]: Crown essentials
+              - heading "CAPS & BEANIES" [level=3] [ref=e85]
+    - generic [ref=e88]:
+      - generic [ref=e89]:
+        - generic [ref=e90]:
+          - paragraph [ref=e91]: Weekend Edit
+          - heading "THE WEEKEND ROTATION" [level=2] [ref=e92]: THE WEEKENDROTATION
+        - button [ref=e93] [cursor=pointer]
+      - generic [ref=e98]:
+        - generic [ref=e99]:
+          - generic [ref=e100]:
+            - img "Essential Track Jacket" [ref=e101]
+            - generic [ref=e102]:
+              - generic [ref=e103]:
+                - button "XS" [ref=e104] [cursor=pointer]
+                - button "S" [ref=e105] [cursor=pointer]
+                - button "M" [ref=e106] [cursor=pointer]
+                - button "L" [ref=e107] [cursor=pointer]
+                - button "XL" [ref=e108] [cursor=pointer]
+              - button "Quick Add" [ref=e109] [cursor=pointer]
+            - generic [ref=e110]: New
+          - generic [ref=e111]:
+            - paragraph [ref=e112]: Outerwear
+            - heading "Essential Track Jacket" [level=3] [ref=e113]
+            - generic [ref=e114]: $285
+        - generic [ref=e116]:
+          - generic [ref=e117]:
+            - img "Heritage Polo Shirt" [ref=e118]
+            - generic [ref=e119]:
+              - generic [ref=e120]:
+                - button "XS" [ref=e121] [cursor=pointer]
+                - button "S" [ref=e122] [cursor=pointer]
+                - button "M" [ref=e123] [cursor=pointer]
+                - button "L" [ref=e124] [cursor=pointer]
+                - button "XL" [ref=e125] [cursor=pointer]
+              - button "Quick Add" [ref=e126] [cursor=pointer]
+          - generic [ref=e127]:
+            - paragraph [ref=e128]: Tops
+            - heading "Heritage Polo Shirt" [level=3] [ref=e129]
+            - generic [ref=e130]:
+              - generic [ref=e131]: $145
+              - generic [ref=e132]: $195
+        - generic [ref=e133]:
+          - generic [ref=e134]:
+            - img "Relaxed Fit Shorts" [ref=e135]
+            - generic [ref=e136]:
+              - generic [ref=e137]:
+                - button "XS" [ref=e138] [cursor=pointer]
+                - button "S" [ref=e139] [cursor=pointer]
+                - button "M" [ref=e140] [cursor=pointer]
+                - button "L" [ref=e141] [cursor=pointer]
+                - button "XL" [ref=e142] [cursor=pointer]
+              - button "Quick Add" [ref=e143] [cursor=pointer]
+          - generic [ref=e144]:
+            - paragraph [ref=e145]: Bottoms
+            - heading "Relaxed Fit Shorts" [level=3] [ref=e146]
+            - generic [ref=e147]: $125
+        - generic [ref=e149]:
+          - generic [ref=e150]:
+            - img "Classic Hoodie" [ref=e151]
+            - generic [ref=e152]:
+              - generic [ref=e153]:
+                - button "XS" [ref=e154] [cursor=pointer]
+                - button "S" [ref=e155] [cursor=pointer]
+                - button "M" [ref=e156] [cursor=pointer]
+                - button "L" [ref=e157] [cursor=pointer]
+                - button "XL" [ref=e158] [cursor=pointer]
+              - button "Quick Add" [ref=e159] [cursor=pointer]
+            - generic [ref=e160]: Best Seller
+          - generic [ref=e161]:
+            - paragraph [ref=e162]: Tops
+            - heading "Classic Hoodie" [level=3] [ref=e163]
+            - generic [ref=e164]: $225
+    - generic [ref=e167]:
+      - generic [ref=e168]:
+        - paragraph [ref=e169]: The Manifesto
+        - heading "WHERE SPORT MEETS STREET" [level=2] [ref=e170]: WHERE SPORTMEETS STREET
+        - paragraph [ref=e171]: Born from the tennis courts of the French Riviera, our aesthetic bridges the gap between athletic heritage and urban expression. Each piece is crafted to move with you—from morning practice to midnight conversations.
+        - paragraph [ref=e172]: This is not just clothing. It's a statement of effortless confidence.
+        - button [ref=e174] [cursor=pointer]
+      - generic [ref=e180]:
+        - img "Editorial" [ref=e182]
+        - generic [ref=e183]:
+          - paragraph [ref=e184]: "25"
+          - paragraph [ref=e185]: Years ofExcellence
+    - generic [ref=e187]:
+      - paragraph [ref=e188]: Stay Connected
+      - heading "JOIN THE INNER CIRCLE" [level=2] [ref=e189]: JOIN THEINNER CIRCLE
+      - paragraph [ref=e190]: Be the first to access exclusive drops, members-only pricing, and curated style guides.
+      - generic [ref=e191]:
+        - generic [ref=e192]:
+          - textbox "Enter your email" [ref=e193]
+          - button "Subscribe" [ref=e194] [cursor=pointer]
+        - paragraph [ref=e197]: By subscribing, you agree to our Privacy Policy and consent to receive updates.
+  - contentinfo [ref=e198]:
+    - generic [ref=e199]:
+      - generic [ref=e200]:
+        - generic [ref=e201]:
+          - heading "LACOSHUB" [level=2] [ref=e202]
+          - paragraph [ref=e203]: Redefining heritage sportswear for the modern urbanite. Crafted with precision, worn with intention.
+          - generic [ref=e204]:
+            - link [ref=e205] [cursor=pointer]:
+              - /url: "#"
+            - link [ref=e209] [cursor=pointer]:
+              - /url: "#"
+        - generic [ref=e212]:
+          - heading "Shop" [level=3] [ref=e213]
+          - list [ref=e214]:
+            - listitem [ref=e215]:
+              - link "New Arrivals" [ref=e216] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e217]:
+              - link "Tracksuits" [ref=e218] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e219]:
+              - link "Tops" [ref=e220] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e221]:
+              - link "Bottoms" [ref=e222] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e223]:
+              - link "Accessories" [ref=e224] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e225]:
+              - link "Sale" [ref=e226] [cursor=pointer]:
+                - /url: "#"
+        - generic [ref=e227]:
+          - heading "Help" [level=3] [ref=e228]
+          - list [ref=e229]:
+            - listitem [ref=e230]:
+              - link "Contact Us" [ref=e231] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e232]:
+              - link "Shipping Info" [ref=e233] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e234]:
+              - link "Returns" [ref=e235] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e236]:
+              - link "Size Guide" [ref=e237] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e238]:
+              - link "Track Order" [ref=e239] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e240]:
+              - link "FAQ" [ref=e241] [cursor=pointer]:
+                - /url: "#"
+        - generic [ref=e242]:
+          - heading "Company" [level=3] [ref=e243]
+          - list [ref=e244]:
+            - listitem [ref=e245]:
+              - link "About Us" [ref=e246] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e247]:
+              - link "Careers" [ref=e248] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e249]:
+              - link "Sustainability" [ref=e250] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e251]:
+              - link "Press" [ref=e252] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e253]:
+              - link "Affiliates" [ref=e254] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e255]:
+              - link "Stores" [ref=e256] [cursor=pointer]:
+                - /url: "#"
+        - generic [ref=e257]:
+          - heading "We Accept" [level=3] [ref=e258]
+          - generic [ref=e259]:
+            - generic [ref=e260]: Visa
+            - generic [ref=e261]: MC
+            - generic [ref=e262]: Amex
+            - generic [ref=e263]: PayPal
+      - generic [ref=e264]:
+        - paragraph [ref=e265]: © 2025 LacosHub. All rights reserved.
+        - generic [ref=e266]:
+          - link "Privacy Policy" [ref=e267] [cursor=pointer]:
+            - /url: "#"
+          - link "Terms of Service" [ref=e268] [cursor=pointer]:
+            - /url: "#"
+          - link "Cookies" [ref=e269] [cursor=pointer]:
+            - /url: "#"

@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================
+   BASE STYLES
+   ============================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Stop iOS inflating type when a phone is rotated to landscape */
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+/* Grey flash on every tap reads cheap on a store this restrained */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: 'Archivo', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #FDFBF8;
+  color: #1C1914;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+/* ============================================
+   SELECTION STYLES
+   ============================================ */
+
+::selection {
+  background-color: #1C1914;
+  color: #FDFBF8;
+}
+
+::-moz-selection {
+  background-color: #1C1914;
+  color: #FDFBF8;
+}
+
+/* ============================================
+   SCROLLBAR STYLES
+   ============================================ */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F2ECE2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1C1914;
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0d0d0d;
+}
+
+/* ============================================
+   CUSTOM UTILITY CLASSES
+   ============================================ */
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .animate-marquee {
+    animation: marquee 30s linear infinite;
+  }
+
+  .animate-marquee-reverse {
+    animation: marquee-reverse 30s linear infinite;
+  }
+}
+
+/* ============================================
+   KEYFRAME ANIMATIONS
+   ============================================ */
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-reverse {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes pulse-soft {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* ============================================
+   TYPOGRAPHY ENHANCEMENTS
+   ============================================ */
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+p {
+  line-height: 1.7;
+}
+
+/* ============================================
+   BUTTON FOCUS STATES — Origin signal blue
+   ============================================ */
+
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid #2440FF;
+  outline-offset: 2px;
+}
+
+/* ============================================
+   INPUT STYLES
+   ============================================ */
+
+input[type="email"],
+input[type="text"] {
+  font-family: inherit;
+}
+
+input[type="email"]::placeholder,
+input[type="text"]::placeholder {
+  font-family: inherit;
+  letter-spacing: 0.05em;
+}
+
+/* ============================================
+   IMAGE LOADING STATES
+   ============================================ */
+
+/* The blanket `img { opacity: 0; animation: fadeIn }` that used to live here
+   fought the product card gallery: a CSS animation outranks an inline style,
+   so for its first 500ms it forced the hover image to opacity 1 on top of the
+   primary one. Section reveals are handled by Framer Motion instead. */
+
+/* ============================================
+   GLASSMORPHISM UTILITIES
+   ============================================ */
+
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.glass-dark {
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ============================================
+   PREMIUM HOVER EFFECTS
+   ============================================ */
+
+.hover-lift {
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              box-shadow 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.hover-lift:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* ============================================
+   TEXT GRADIENT UTILITY
+   ============================================ */
+
+.text-gradient {
+  background: linear-gradient(135deg, #1C1914 0%, #9B8B7A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ============================================
+   NOISE TEXTURE OVERLAY
+   ============================================ */
+
+.noise-overlay::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.03;
+  pointer-events: none;
+}
+
+/* ============================================
+   RESPONSIVE TYPOGRAPHY SCALES
+   ============================================ */
+
+@media (max-width: 640px) {
+  /* 14px shrank the whole rem scale far enough that body copy landed near
+     12px on a phone. 15px matches the body size in ORIGIN_BRAND.md §5. */
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1920px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+/* ============================================
+   REDUCED MOTION PREFERENCES
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ============================================
+   DARK MODE SUPPORT (Optional)
+   ============================================ */
+
+@media (prefers-color-scheme: dark) {
+  /* Uncomment to enable dark mode */
+  /*
+  body {
+    background-color: #0d0d0d;
+    color: #ffffff;
+  }
+  */
+}
