@@ -2,6 +2,8 @@ import React, { useState, useRef, useEffect } from 'react';
 import { motion, useScroll, useTransform, useSpring, useInView, AnimatePresence } from 'framer-motion';
 import { ShoppingBag, Menu, X, Search, User, ChevronRight, ArrowUpRight, Instagram, Twitter } from 'lucide-react';
 
+const BASE_URL = import.meta.env.BASE_URL;
+
 // ============================================
 // CUSTOM HOOKS
 // ============================================
@@ -42,12 +44,12 @@ const useMediaQuery = (queryString) => {
 };
 
 // Touch devices have no hover, so anything gated behind it has to be reachable
-// another way. 77% of Origin's traffic is mobile â€” see ORIGIN_BRAND.md Â§3.
+// another way. 77% of Origin's traffic is mobile â€?see ORIGIN_BRAND.md Â§3.
 const useCoarsePointer = () => useMediaQuery('(pointer: coarse)');
 
 // The hover-reveal quick-add only works where the card is wide enough AND
 // there's a real cursor. Width alone isn't enough (touch laptops), and pointer
-// alone isn't either â€” a narrow window on a desktop would still get the rail
+// alone isn't either â€?a narrow window on a desktop would still get the rail
 // crushed to ~20px per size. Both have to hold.
 const useHoverLayout = () => useMediaQuery('(min-width: 1024px) and (pointer: fine)');
 
@@ -66,7 +68,7 @@ const useScrollLock = (locked) => {
 // desktop pixels over SA mobile networks (ORIGIN_BRAND.md Â§11). Widths are
 // keyed by filename suffix; '' is the full-size original.
 //   responsive(src, { sm: 768, md: 1280, '': 1920 }, '100vw')
-// `sizes` must subtract the page gutters â€” describing a gutter-padded image as
+// `sizes` must subtract the page gutters â€?describing a gutter-padded image as
 // 100vw overstates the slot enough that the browser skips the small variant.
 const responsive = (src, widths, sizes) => ({
   srcSet: Object.entries(widths)
@@ -236,7 +238,7 @@ const Navigation = () => {
               ))}
             </div>
 
-            {/* Icons â€” 44px hit areas per ORIGIN_BRAND.md Â§5 (touch targets) */}
+            {/* Icons â€?44px hit areas per ORIGIN_BRAND.md Â§5 (touch targets) */}
             <div className="flex items-center -mr-3 lg:mr-0 lg:gap-2">
               <motion.button
                 whileTap={{ scale: 0.95 }}
@@ -366,9 +368,9 @@ const HeroSection = () => {
         className="absolute inset-0"
       >
         <img
-          src="/images/hero-aw26.webp"
-          {...responsive('/images/hero-aw26.webp', { sm: 768, md: 1280, '': 1920 }, '100vw')}
-          alt="Origin â€” South African contemporary fashion"
+          src={`${BASE_URL}images/hero-aw26.webp`}
+          {...responsive(`${BASE_URL}images/hero-aw26.webp`, { sm: 768, md: 1280, '': 1920 }, '100vw')}
+          alt="Origin â€?South African contemporary fashion"
           fetchPriority="high"
           decoding="async"
           className="w-full h-full object-cover"
@@ -450,7 +452,7 @@ const HeroSection = () => {
 // ============================================
 
 const Marquee = () => {
-  const text = "NATURAL FIBRES â€¢ HONEST CONSTRUCTION â€¢ DESIGNED IN SOUTH AFRICA â€¢ FREE SHIPPING ON ORDERS OVER R1,500 â€¢ NEW SEASON NOW LIVE â€¢ ";
+  const text = "NATURAL FIBRES â€?HONEST CONSTRUCTION â€?DESIGNED IN SOUTH AFRICA â€?FREE SHIPPING ON ORDERS OVER R1,500 â€?NEW SEASON NOW LIVE â€?";
 
   return (
     <div className="bg-[#1C1914] py-3 lg:py-4 overflow-hidden">
@@ -482,7 +484,7 @@ const Marquee = () => {
 const SIZES = ['XS', 'S', 'M', 'L', 'XL'];
 
 // Sizing opens a sheet, never a dropdown (ORIGIN_BRAND.md Â§7). Sold-out sizes
-// stay visible and struck through â€” the brand shows the truth about
+// stay visible and struck through â€?the brand shows the truth about
 // availability rather than hiding it (Â§2, Honesty).
 const SizeSheet = ({ product, onClose }) => {
   const [selected, setSelected] = useState(null);
@@ -511,7 +513,7 @@ const SizeSheet = ({ product, onClose }) => {
           <motion.div
             role="dialog"
             aria-modal="true"
-            aria-label={`Choose a size â€” ${product.name}`}
+            aria-label={`Choose a size â€?${product.name}`}
             initial={{ y: '100%' }}
             animate={{ y: 0 }}
             exit={{ y: '100%' }}
@@ -635,7 +637,7 @@ const ProductCard = ({ product, index, onChooseSize }) => {
           />
         ))}
 
-        {/* Quick Add Overlay â€” pointer devices only */}
+        {/* Quick Add Overlay â€?pointer devices only */}
         {hoverLayout && (
           <motion.div
             initial={{ y: '100%' }}
@@ -667,7 +669,7 @@ const ProductCard = ({ product, index, onChooseSize }) => {
           </motion.div>
         )}
 
-        {/* Gallery dots â€” always visible on touch, per Â§7 */}
+        {/* Gallery dots â€?always visible on touch, per Â§7 */}
         {!hoverLayout && (
           <div className="absolute bottom-3 left-0 right-0 flex justify-center gap-1.5">
             {images.map((src, i) => (
@@ -728,21 +730,21 @@ const FeaturedCategories = () => {
     {
       title: "WOMENSWEAR",
       subtitle: "Dresses, skirts, structured jackets",
-      image: "/images/category-womenswear.webp",
+      image: `${BASE_URL}images/category-womenswear.webp`,
       width: 1400,
       size: "large"
     },
     {
       title: "MENSWEAR",
       subtitle: "Overshirts, linen, heavy cotton",
-      image: "/images/category-menswear.webp",
+      image: `${BASE_URL}images/category-menswear.webp`,
       width: 1200,
       size: "medium"
     },
     {
       title: "ACCESSORIES",
       subtitle: "The finishing touch",
-      image: "/images/category-accessories.webp",
+      image: `${BASE_URL}images/category-accessories.webp`,
       width: 1200,
       size: "medium"
     }
@@ -844,8 +846,8 @@ const CuratedCollection = () => {
       name: "Linen Camp Shirt",
       category: "Mens",
       price: "899",
-      image: "/images/linen-camp-shirt-1.webp",
-      hoverImage: "/images/linen-camp-shirt-2.webp",
+      image: `${BASE_URL}images/linen-camp-shirt-1.webp`,
+      hoverImage: `${BASE_URL}images/linen-camp-shirt-2.webp`,
       badge: "New"
     },
     {
@@ -853,23 +855,23 @@ const CuratedCollection = () => {
       category: "Womens",
       price: "1,399",
       originalPrice: "1,799",
-      image: "/images/structured-blazer-1.webp",
-      hoverImage: "/images/structured-blazer-2.webp"
+      image: `${BASE_URL}images/structured-blazer-1.webp`,
+      hoverImage: `${BASE_URL}images/structured-blazer-2.webp`
     },
     {
       name: "Heavy Cotton Tee",
       category: "Mens",
       price: "599",
-      image: "/images/heavy-cotton-tee-1.webp",
-      hoverImage: "/images/heavy-cotton-tee-2.webp",
+      image: `${BASE_URL}images/heavy-cotton-tee-1.webp`,
+      hoverImage: `${BASE_URL}images/heavy-cotton-tee-2.webp`,
       soldOut: ["XS"]
     },
     {
       name: "Wide-Leg Trouser",
       category: "Womens",
       price: "1,199",
-      image: "/images/wide-leg-trouser-1.webp",
-      hoverImage: "/images/wide-leg-trouser-2.webp",
+      image: `${BASE_URL}images/wide-leg-trouser-1.webp`,
+      hoverImage: `${BASE_URL}images/wide-leg-trouser-2.webp`,
       badge: "Best Seller"
     }
   ];
@@ -897,7 +899,7 @@ const CuratedCollection = () => {
             </MagneticButton>
           </motion.div>
 
-          {/* Products Grid â€” 2 / 3 / 4 columns per ORIGIN_BRAND.md Â§5 */}
+          {/* Products Grid â€?2 / 3 / 4 columns per ORIGIN_BRAND.md Â§5 */}
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-10 md:gap-x-6 md:gap-y-12">
             {products.map((product, index) => (
               <ProductCard
@@ -948,7 +950,7 @@ const EditorialSection = () => {
             <span className="font-light">INHERIT</span>
           </motion.h2>
           <motion.p variants={fadeInUp} className="text-[#9B8B7A] text-lg font-light leading-relaxed mb-8">
-            Origin began in 2021 as Nanayhaa, after its founder, Abenathi Nanayhaa Mtshiyo. The name changed; the intention did not. Origin is design at its genesis â€” the structure, the craft and the traditions that existed long before any of it was called fashion.
+            Origin began in 2021 as Nanayhaa, after its founder, Abenathi Nanayhaa Mtshiyo. The name changed; the intention did not. Origin is design at its genesis â€?the structure, the craft and the traditions that existed long before any of it was called fashion.
           </motion.p>
           <motion.p variants={fadeInUp} className="text-[#9B8B7A] text-lg font-light leading-relaxed mb-10">
             Every piece carries something inherited: a technique, a proportion, a way of finishing an edge, passed down through generations of South African makers. French seams. Natural fibres. Pre-washed fabrics. Made properly, priced fairly, built to outlast the season.
@@ -970,9 +972,9 @@ const EditorialSection = () => {
           <div className="aspect-[4/5] overflow-hidden">
             <motion.img
               style={{ y }}
-              src="/images/editorial-atelier.webp"
-              {...responsive('/images/editorial-atelier.webp', { sm: 720, '': 1000 }, '(min-width:1024px) 45vw, calc(100vw - 3rem)')}
-              alt="Origin studio â€” South African craftsmanship"
+              src={`${BASE_URL}images/editorial-atelier.webp`}
+              {...responsive(`${BASE_URL}images/editorial-atelier.webp`, { sm: 720, '': 1000 }, '(min-width:1024px) 45vw, calc(100vw - 3rem)')}
+              alt="Origin studio â€?South African craftsmanship"
               loading="lazy"
               decoding="async"
               className="w-full h-[120%] object-cover"
@@ -1063,9 +1065,9 @@ const MensEditorial = () => {
         >
           <div className="aspect-[4/5] overflow-hidden bg-[#F2ECE2]">
             <img
-              src="/images/editorial-menswear.webp"
-              {...responsive('/images/editorial-menswear.webp', { sm: 720, '': 1000 }, '(min-width:1024px) 45vw, calc(100vw - 3rem)')}
-              alt="Origin menswear â€” linen overshirt, Autumn / Winter 2026"
+              src={`${BASE_URL}images/editorial-menswear.webp`}
+              {...responsive(`${BASE_URL}images/editorial-menswear.webp`, { sm: 720, '': 1000 }, '(min-width:1024px) 45vw, calc(100vw - 3rem)')}
+              alt="Origin menswear â€?linen overshirt, Autumn / Winter 2026"
               loading="lazy"
               decoding="async"
               className="w-full h-full object-cover"
@@ -1087,7 +1089,7 @@ const MensEditorial = () => {
             <span className="font-light">YOU REACH FOR</span>
           </motion.h2>
           <motion.p variants={fadeInUp} className="text-[#9B8B7A] text-base lg:text-lg font-light leading-relaxed mb-8">
-            Overshirts cut with room to move. Linen that softens every time you wash it. Heavy cotton that keeps its shape. The shirt that fits and the trousers that move â€” worn until they are yours.
+            Overshirts cut with room to move. Linen that softens every time you wash it. Heavy cotton that keeps its shape. The shirt that fits and the trousers that move â€?worn until they are yours.
           </motion.p>
           <motion.div variants={fadeInUp}>
             <MagneticButton className="w-full sm:w-auto">
@@ -1120,7 +1122,7 @@ const OriginStandard = () => {
     },
     {
       title: "Honest availability",
-      body: "No countdown timers and no â€œonly two leftâ€. When a size is gone it stays on the page, struck through."
+      body: "No countdown timers and no â€œonly two leftâ€? When a size is gone it stays on the page, struck through."
     },
     {
       title: "XS to XL",
@@ -1161,10 +1163,10 @@ const Community = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const tiles = [
-    { src: "/images/community-1.webp", alt: "Autumn / Winter 2026, cream linen and warm taupe" },
-    { src: "/images/community-2.webp", alt: "Hands folding a length of undyed linen" },
-    { src: "/images/community-3.webp", alt: "Cream linen dress in late afternoon light" },
-    { src: "/images/community-4.webp", alt: "Finishing a seam in the Origin studio" }
+    { src: `${BASE_URL}images/community-1.webp`, alt: "Autumn / Winter 2026, cream linen and warm taupe" },
+    { src: `${BASE_URL}images/community-2.webp`, alt: "Hands folding a length of undyed linen" },
+    { src: `${BASE_URL}images/community-3.webp`, alt: "Cream linen dress in late afternoon light" },
+    { src: `${BASE_URL}images/community-4.webp`, alt: "Finishing a seam in the Origin studio" }
   ];
 
   return (
@@ -1226,7 +1228,7 @@ const Community = () => {
 // ============================================
 
 // TODO: these are conventional SA apparel measurements standing in until Origin
-// supplies its own graded spec â€” confirm every figure before launch.
+// supplies its own graded spec â€?confirm every figure before launch.
 const SIZE_CHARTS = {
   Womens: {
     columns: ["Bust", "Waist", "Hip"],
